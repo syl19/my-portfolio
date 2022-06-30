@@ -54,24 +54,123 @@ a {
   padding-top: 80px;
   text-align: center;
 }
-@media (min-width: 768px){
-.navbar-expand-md .navbar-nav .dropdown-menu {
-    position: static;
+ 
+
+/* --- Hero --- */
+
+
+.side-social {
+  text-align: start;
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  opacity: 65%;
+  padding-left: 40px;
 }
+.side-social li {
+  margin-bottom: 20px;
+  font-size: 23px;
 }
-.dropdown-menu {
-  background-color: #010713;
-}
-.dropdown-item {
+.side-social a {
+  text-decoration: none;
   color: #fff;
+}
+.side-social a:hover {
+  color: #c71585;
+}
+.in-front {
+  z-index: 1100;
+}
+
+.lang {
+  font-size: 12px;
   font-weight: 200;
+  padding-top: 15px;
+  padding-left: 0;
 }
-.dropdown-item:hover {
-  background-color: mediumvioletred;
+.lang li {
+  display: inline;
+  padding: 5px;
+}
+.lang a {
   color: #fff;
 }
-.dropdown-item img {
-  padding-right: 30px;
+.lang a:hover {
+  color: #c71585;
+}
+
+/* --- Hero --- */
+
+.hero {
+  position: relative;
+  z-index: 1; 
+  width: 100vw;
+  height: 100vh;
+  margin-top: -70px;
+ 
+}
+.hero .hero-bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../images/pawel-czerwinski-uYWQNAvdWpc-unsplash.jpg) center center;
+  background-size: cover;
+  opacity: 75%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero h1 {
+  font-size: 65px;
+}
+.hero-text {
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  text-shadow: 3px 3px 10px black;
+}
+
+.btn-hire {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: mediumvioletred;
+  border: solid 1px mediumvioletred;
+  padding: 8px 20px;
+}
+.btn-hire a {
+  color: #c71585;
+}
+.btn-hire a:hover {
+  background-color: #c71585;
+  border: none;
+  color: white;
+}
+.btn-hire:hover {
+  background-color: #c71585;
+  border-color: #c71585;
+  color: #fff;
+}
+.arrow {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
 }
 
 
@@ -88,6 +187,15 @@ a {
   .none {
     display: none;
   }
+  .lang {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .side-social {
+    display: none;
+  }
+  
+  
 }
 
 @media (max-width: 992px) { 
@@ -104,9 +212,17 @@ a {
     opacity: 50%;
     font-size: 25px;
   }
+  .hero h1 {
+    font-size: 50px;
+  }
+  .btn-hire {
+    position: absolute;
+    top: 75%;
+  }
 }
+
 @media (min-width: 768px) {
-  .no-contacts-md {
+  .mobile-contacts {
     display: none;
   }
 }
