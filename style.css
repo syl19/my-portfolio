@@ -43,7 +43,6 @@ a {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
 }
-
 .navbar-toggler {
   border: none;
 }
@@ -83,7 +82,6 @@ a {
 .in-front {
   z-index: 1100;
 }
-
 .lang {
   font-size: 12px;
   font-weight: 200;
@@ -172,6 +170,7 @@ a {
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
 }
+
 
 /*--- Main ---*/
 
@@ -263,11 +262,61 @@ a {
   --animate-duration: 5s;
 }
 
+/*--- Contact ---*/
+
+
+.details {
+  width: 30%;
+}
+.message {
+  width: 60%;
+}
+.send {
+  background-color: mediumvioletred;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.send:hover {
+  border-color: #c71585;
+  color: #c71585;
+}
+.form-label {
+  color: mediumvioletred;
+}
+.form-control {
+  background-color: #E8F0F2;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reach-out {
+  text-align: center;
+  font-weight: 200;
+  margin-top: -110px;
+  margin-bottom: 150px;
+  font-size: 19px;
+}
+
+::placeholder {
+  font-weight: 200;
+}
+.copyright {
+  margin-top: 215px;
+  padding-bottom: 20px;
+  font-weight: 200;
+  opacity: 50%;
+}
+footer a {
+  color: #c71585;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #c71585;
+}
 
 
 
-
-
+/*-- Media queries --*/
 
 @media (max-width: 767px) {
   .nav-link {
@@ -298,9 +347,20 @@ a {
     text-align: center;
     width: 100%;
   }
-  
-  
-  
+  .details {
+    width: 100%;
+  }
+  .message {
+    width: 100%;
+  }
+  .reach-out {
+    margin-top: -50px;
+    margin-bottom: 70px;
+    font-size: 19px;
+  }
+  .copyright {
+    margin-top: 100px;
+  }
 }
 
 @media (max-width: 992px) { 
@@ -318,7 +378,7 @@ a {
     font-size: 25px;
   }
   .hero h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
   .btn-hire {
     position: absolute;
@@ -342,7 +402,29 @@ a {
     padding-left: 35px;
     padding-right: 35px;
   } 
+  .reach-out {
+    margin-top: -10px;
+    margin-bottom: 70px;
+    font-size: 19px;
+  }
+  .copyright {
+    margin-top: 80px;
+  }
+  .mobile-socials {
+    padding: 0;
+    word-spacing: 15px;
+  }
+  .mobile-socials li {
+    display: inline;
+  }
+  .mobile-socials a {
+    text-decoration: none;
+    color: #fff;  
+    opacity: 50%;
+    font-size: 25px;
+  }
 }
+
 
 @media (min-width: 768px) {
   .mobile-contacts {
