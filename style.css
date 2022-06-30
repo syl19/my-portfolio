@@ -116,7 +116,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../images/pawel-czerwinski-uYWQNAvdWpc-unsplash.jpg) center center;
+  background: url(./images/pawel-czerwinski-uYWQNAvdWpc-unsplash.jpg) center center;
   background-size: cover;
   opacity: 75%;
   width: 100%;
@@ -201,10 +201,10 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .apple {
-  background-image: url(../images/apple.jpg);
+  background-image: url(./images/apple.jpg);
 }
 .airbnb {
-  background-image: url(../images/airbnb.webp);
+  background-image: url(./images/airbnb.webp);
 }
 .project3 {
   background-image: url(https://picsum.photos/399/399);
