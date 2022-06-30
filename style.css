@@ -173,6 +173,96 @@ a {
   --animate-duration: 2s;
 }
 
+/*--- Main ---*/
+
+
+.main-headers {
+  text-align: center;
+  color: #c71585;
+  font-weight: 400;
+  padding-top: 200px;
+  margin-bottom: 150px;
+  font-size: 55px;
+}
+.avatar {
+  height: 230px;
+  border-radius: 50%;
+  border: #c71585 solid 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.about-me {
+  font-size: 22px;
+  font-weight: 200;
+  width: 85%;
+}
+.projects .img-card {
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.apple {
+  background-image: url(../images/apple.jpg);
+}
+.airbnb {
+  background-image: url(../images/airbnb.webp);
+}
+.project3 {
+  background-image: url(https://picsum.photos/399/399);
+}
+.project4 {
+  background-image: url(https://picsum.photos/401/401);
+}
+.html {
+  color: #d84a24;
+}
+.css {
+  color: #0769b0;
+}
+
+.projects ul {
+  padding-left: 0%;
+}
+.projects li {
+  display: inline-block;
+}
+.text-box {
+  text-align: center;
+  color: #fff;
+}
+.small {
+  font-weight: 200;
+  opacity: 50%;
+  margin-bottom: 9px;
+}
+
+.giga-text {
+  position: absolute;
+  opacity: .09;
+  font-size: 400px;
+  font-weight: 600;
+  opacity: .05;
+  z-index: 0;
+}
+#about-giga {
+  bottom: -870px;
+  right: -200px;
+}
+#contact-giga {
+  bottom: -2600px;
+  right: -500px;
+}
+#work-giga {
+  bottom: -1750px;
+  right: 400px;
+}
+.animate__animated.animate__pulse {
+  --animate-duration: 5s;
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 5s;
+}
+
 
 
 
@@ -194,6 +284,21 @@ a {
   .side-social {
     display: none;
   }
+  .main-headers {
+    padding-top: 70px;
+    margin-bottom: 70px;
+    font-size: 30px;
+  }
+  .avatar {
+    height: 170px;
+  }
+  .about-me {
+    margin-top: 70px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
   
   
 }
@@ -219,10 +324,45 @@ a {
     position: absolute;
     top: 75%;
   }
+  .main-headers {
+    padding-top: 70px;
+    margin-bottom: 50px;
+    font-size: 35px;
+  }
+  .avatar {
+    height: 130px;
+  }
+  .about-me {
+    margin-top: 50px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .mobile {
+    padding-left: 35px;
+    padding-right: 35px;
+  } 
 }
 
 @media (min-width: 768px) {
   .mobile-contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .giga-text {
+    display: none;
+  }
+
+}
+@media (max-width: 1179px) {
+  .side-social {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .none {
     display: none;
   }
 }
