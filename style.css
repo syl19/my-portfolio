@@ -46,6 +46,17 @@ a {
 .navbar-toggler {
   border: none;
 }
+.navbar-toggler:focus {
+  text-decoration: none;
+  box-shadow: none;
+}
+.btn-close {
+  width: 1.5em;
+  height: 1.5em;
+  background: transparent url(./images/pngfind.com-3d-cross-png-6222696.png) center/1em auto no-repeat;
+}
+
+
 .offcanvas {
   background-color: #010713;
 }
@@ -413,6 +424,9 @@ footer a:hover {
   .mobile-socials {
     padding: 0;
     word-spacing: 15px;
+  }
+  .mobile-socials ul {
+    padding: 0;
   }
   .mobile-socials li {
     display: inline;
