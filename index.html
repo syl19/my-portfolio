@@ -36,15 +36,15 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
                 <li class="nav-item">
-                  <a class="nav-link hover-underline-animation" href="#about">About</a>
+                  <a class="nav-link hover-underline-animation" href="#about" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hover-underline-animation" href="#projects">Projects</a>
+                  <a class="nav-link hover-underline-animation" href="#projects" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link hover-underline-animation" href="#contact">Contact</a>
+                  <a href="#contact" class="nav-link hover-underline-animation" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasNavbar">Contact</a>
                 </li>
                 <li class="nav-item none">
                   <a class="nav-link" href="#"><i class="fa fa-toggle-on"></i></a>
@@ -56,12 +56,14 @@
                     <li><a href="">ES</a></li>
                   </ul>
                 </li>
-                <li><ul class="mobile-contacts">
+                <li class="nav-item">
+                  <ul class="mobile-contacts">
                   <li><a href="#"><i class="fab fa-github"></i></a></li>
                   <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                   <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                   <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul></li>
+                </ul>
+              </li>
               </ul>
           </div>
         </div>
@@ -74,7 +76,6 @@
 
     
     <div class="container-fluid hero">
-      <div class="hero-bg"></div>
       <ul class="side-social">
         <li><a href="#"><i class="fab fa-github"></i></a></li>
         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
@@ -85,7 +86,7 @@
         <h1>Silvia Aisha</h1>
         <h3>Web Developer</h3>
       </div>
-      <a href="#contact"><button class="btn btn-outline-secondary btn-hire in-front">Hire me!</button></a>
+      <a href="#contact"><button class="btn btn-outline-secondary btn-hire">Hire me!</button></a>
     
       <a href="#about" style="color: white;"><i class="fa-solid fa-angles-down arrow animate__animated animate__bounce animate__infinite"></i></a>
     </div>
@@ -112,7 +113,7 @@
       <div id="projects" class="container-lg mobile">
         <h3 class="main-headers">My projects</h3>
         <div class="row mb-5 flex-nowrap overflow-auto ">
-          <div class="col-10 col-md-9 col-lg-7 col-xl-3 projects in-front">
+          <div class="col-10 col-sm-5 col-xl-3 projects in-front">
             <div class="img-card mb-3 rounded-3 apple">
             </div>
             <div class="text-box">
@@ -124,7 +125,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-10 col-md-9 col-lg-7 col-xl-3 projects in-front">
+          <div class="col-10 col-sm-5 col-xl-3 projects in-front">
             <div class="img-card mb-3 rounded-3 airbnb">
             </div>
             <div class="text-box">
@@ -136,7 +137,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-10 col-md-9 col-lg-7 col-xl-3 projects in-front">
+          <div class="col-10 col-sm-5 col-xl-3 projects in-front">
             <div class="img-card mb-3 rounded-3 project3">
             </div>
             <div class="text-box">
@@ -147,7 +148,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-10 col-md-9 col-lg-7 col-xl-3 projects in-front">
+          <div class="col-10 col-sm-5 col-xl-3 projects in-front">
             <div class="img-card mb-3 rounded-3 project4">
             </div>
             <div class="text-box">
@@ -193,7 +194,7 @@
       </div>
       <div class="giga-text animate__animated animate__pulse animate__infinite animate__slower" id="contact-giga">Contact</div>
       <div class="row d-lg-none">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center align-self-center">
           <ul class="mobile-socials">
             <li><a href="#"><i class="fab fa-github"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>

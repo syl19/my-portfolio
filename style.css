@@ -51,9 +51,9 @@ a {
   box-shadow: none;
 }
 .btn-close {
-  width: 1.5em;
-  height: 1.5em;
-  background: transparent url(./images/pngfind.com-3d-cross-png-6222696.png) center/1em auto no-repeat;
+  width: 50px;
+  height: 50px;
+  background: transparent url(./images/pngfind.com-3d-cross-png-6222696.png) center/1.5em auto no-repeat;
 }
 
 
@@ -113,26 +113,15 @@ a {
 /* --- Hero --- */
 
 .hero {
-  position: relative;
   z-index: 1; 
   width: 100vw;
   height: 100vh;
   margin-top: -70px;
- 
-}
-.hero .hero-bg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: url(./images/pawel-czerwinski-uYWQNAvdWpc-unsplash.jpg) center center;
   background-size: cover;
-  width: 100%;
-  height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 .hero h1 {
   font-size: 65px;
@@ -298,6 +287,9 @@ a {
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+textarea.form-control {
+  height: 100px;
+}
 
 .reach-out {
   text-align: center;
@@ -340,6 +332,9 @@ footer a:hover {
     font-size: 16px;
     margin-bottom: 20px;
   }
+  .lang a {
+    color: #c71585;
+  }
   .side-social {
     display: none;
   }
@@ -357,12 +352,6 @@ footer a:hover {
     text-align: center;
     width: 100%;
   }
-  .details {
-    width: 100%;
-  }
-  .message {
-    width: 100%;
-  }
   .reach-out {
     margin-top: -50px;
     margin-bottom: 70px;
@@ -375,11 +364,11 @@ footer a:hover {
 
 @media (max-width: 992px) { 
   .mobile-contacts {
-    padding: 0;
-    word-spacing: 15px;
+    padding-left: 0;
   }
   .mobile-contacts li {
     display: inline;
+    padding: 10px;
   }
   .mobile-contacts a {
     text-decoration: none;
@@ -417,24 +406,29 @@ footer a:hover {
     margin-bottom: 70px;
     font-size: 19px;
   }
+  .details {
+    width: 90%;
+  }
+  .message {
+    width: 90%;
+  }
   .copyright {
     margin-top: 80px;
+    font-size: 12px;
   }
   .mobile-socials {
-    padding: 0;
-    word-spacing: 15px;
-  }
-  .mobile-socials ul {
     padding: 0;
   }
   .mobile-socials li {
     display: inline;
+    padding: 10px;
   }
   .mobile-socials a {
     text-decoration: none;
     color: #fff;  
     opacity: 50%;
     font-size: 25px;
+    text-align: center;
   }
 }
 
