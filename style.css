@@ -37,7 +37,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: mediumvioletred;
+  background-color: #fc00c7;
   transition: transform 0.13s ease-out;
 }
 .hover-underline-animation:hover:after {
@@ -88,7 +88,7 @@ a {
   color: #fff;
 }
 .side-social a:hover {
-  color: #c71585;
+  color: #fc00c7;
 }
 .in-front {
   z-index: 1100;
@@ -107,7 +107,7 @@ a {
   color: #fff;
 }
 .lang a:hover {
-  color: #c71585;
+  color: #fc00c7;
 }
 
 /* --- Hero --- */
@@ -142,21 +142,21 @@ a {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: mediumvioletred;
-  border: solid 1px mediumvioletred;
+  color: #fc00c7;
+  border: solid 1px #fc00c7;
   padding: 8px 20px;
 }
 .btn-hire a {
-  color: #c71585;
+  color: #fc00c7;
 }
 .btn-hire a:hover {
-  background-color: #c71585;
+  background-color: #fc00c7;
   border: none;
   color: white;
 }
 .btn-hire:hover {
-  background-color: #c71585;
-  border-color: #c71585;
+  background-color: #fc00c7;
+  border-color: #fc00c7;
   color: #fff;
 }
 .arrow {
@@ -176,7 +176,7 @@ a {
 
 .main-headers {
   text-align: center;
-  color: #c71585;
+  color: #fc00c7;
   font-weight: 400;
   padding-top: 200px;
   margin-bottom: 150px;
@@ -185,7 +185,7 @@ a {
 .avatar {
   height: 230px;
   border-radius: 50%;
-  border: #c71585 solid 1px;
+  border: #fc00c7 solid 1px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about-me {
@@ -271,16 +271,16 @@ a {
   width: 60%;
 }
 .send {
-  background-color: mediumvioletred;
+  background-color: #fc00c7;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .send:hover {
-  border-color: #c71585;
-  color: #c71585;
+  border-color: #fc00c7;
+  color: #fc00c7;
 }
 .form-label {
-  color: mediumvioletred;
+  color: #fc00c7;
 }
 .form-control {
   background-color: #E8F0F2;
@@ -309,11 +309,11 @@ textarea.form-control {
   opacity: 50%;
 }
 footer a {
-  color: #c71585;
+  color: #fc00c7;
 }
 footer a:hover {
   text-decoration: underline;
-  color: #c71585;
+  color: #fc00c7;
 }
 
 
@@ -333,7 +333,7 @@ footer a:hover {
     margin-bottom: 20px;
   }
   .lang a {
-    color: #c71585;
+    color: #fc00c7;
   }
   .side-social {
     display: none;
