@@ -7,18 +7,16 @@ html, body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
-
-
 /*--- Navbar ---*/
 
 
 .nav-link {
-  color: #fff;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 17.5px;
 }
 .navbar-nav {
   --bs-nav-link-color: #fff;
@@ -80,20 +78,17 @@ a {
 }
 .side-social li {
   margin-bottom: 20px;
-  font-size: 23px;
+  font-size: 23.5px;
 }
-.side-social a {
-  text-decoration: none;
-  color: #fff;
-}
-.side-social a:hover {
+
+.side-social a:hover, .lang a:hover {
   color: #fc00c7;
 }
 .in-front {
   z-index: 1100;
 }
 .lang {
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 200;
   padding-top: 15px;
   padding-left: 0;
@@ -102,12 +97,7 @@ a {
   display: inline;
   padding: 5px;
 }
-.lang a {
-  color: #fff;
-}
-.lang a:hover {
-  color: #fc00c7;
-}
+
 
 /* --- Hero --- */
 
@@ -116,14 +106,13 @@ a {
   width: 100vw;
   height: 100vh;
   margin-top: -70px;
-  background: url(./images/pawel-czerwinski-uYWQNAvdWpc-unsplash.jpg) center center;
+  background: url(./images/pawel-czerwinski-uYWQNAvdWpc-unsplash.webp) center center;
   background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .hero h1 {
-  font-size: 65px;
+  font-size: 65.5px;
 }
 .hero-text {
   font-weight: 600;
@@ -141,22 +130,17 @@ a {
   top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fc00c7;
-  border: solid 1px #fc00c7;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  background: #fc00c7;
   padding: 8px 20px;
 }
-.btn-hire a {
-  color: #fc00c7;
-}
-.btn-hire a:hover {
-  background-color: #fc00c7;
-  border: none;
-  color: white;
-}
+
 .btn-hire:hover {
-  background-color: #fc00c7;
-  border-color: #fc00c7;
-  color: #fff;
+  border: 1px solid #fc00c7;
+  background: transparent;
+  transition: 0.2s;
 }
 .arrow {
   position: absolute;
@@ -175,11 +159,11 @@ a {
 
 .main-headers {
   text-align: center;
-  color: #fc00c7;
+  color: #fe00c7;
   font-weight: 400;
   padding-top: 200px;
   margin-bottom: 150px;
-  font-size: 55px;
+  font-size: 55.5px;
 }
 .avatar {
   height: 230px;
@@ -188,7 +172,7 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .about-me {
-  font-size: 22px;
+  font-size: 21.5px;
   font-weight: 200;
   width: 85%;
 }
@@ -199,16 +183,17 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .apple {
-  background-image: url(./images/apple.jpg);
+  background-image: url(./images/apple.webp);
 }
 .airbnb {
   background-image: url(./images/airbnb.webp);
 }
 .project3 {
-  background-image: url(https://picsum.photos/399/399);
+  background-image: url(./images/free-code-camp_m12n.3840.webp);
 }
 .project4 {
-  background-image: url(https://picsum.photos/401/401);
+  background-image: url(./images/1.svg);
+  background-color: #fff;
 }
 .html {
   color: #d84a24;
@@ -216,7 +201,9 @@ a {
 .css {
   color: #0769b0;
 }
-
+.projects a:hover {
+  color: #fc00c7;
+}
 .projects ul {
   padding-left: 0%;
 }
@@ -229,7 +216,7 @@ a {
 }
 .small {
   font-weight: 200;
-  opacity: 50%;
+  opacity: 70%;
   margin-bottom: 9px;
 }
 
@@ -269,10 +256,19 @@ a {
 .message {
   width: 60%;
 }
+.reach-out {
+  text-align: center;
+  font-weight: 200;
+  margin-top: -110px;
+  margin-bottom: 150px;
+  font-size: 19.5px;
+}
 .send {
   background-color: #fc00c7;
   color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+  padding: 8px 30px;
 }
 .send:hover {
   border-color: #fc00c7;
@@ -289,15 +285,6 @@ a {
 textarea.form-control {
   height: 100px;
 }
-
-.reach-out {
-  text-align: center;
-  font-weight: 200;
-  margin-top: -110px;
-  margin-bottom: 150px;
-  font-size: 19px;
-}
-
 ::placeholder {
   font-weight: 200;
 }
@@ -319,48 +306,6 @@ footer a:hover {
 
 /*-- Media queries --*/
 
-@media (max-width: 767px) {
-  .nav-link {
-    font-size: 30px;
-    margin-bottom: 30px;
-  }
-  .none {
-    display: none;
-  }
-  .lang {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  .lang a {
-    color: #fc00c7;
-  }
-  .side-social {
-    display: none;
-  }
-  .main-headers {
-    padding-top: 70px;
-    margin-bottom: 70px;
-    font-size: 30px;
-  }
-  .avatar {
-    height: 170px;
-  }
-  .about-me {
-    margin-top: 70px;
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-  }
-  .reach-out {
-    margin-top: -50px;
-    margin-bottom: 70px;
-    font-size: 19px;
-  }
-  .copyright {
-    margin-top: 100px;
-  }
-}
-
 @media (max-width: 992px) { 
   .mobile-contacts {
     padding-left: 0;
@@ -373,37 +318,37 @@ footer a:hover {
     text-decoration: none;
     color: #fff;  
     opacity: 50%;
-    font-size: 25px;
+    font-size: 25.5px;
   }
   .hero h1 {
-    font-size: 40px;
+    font-size: 39.5px;
   }
   .btn-hire {
     position: absolute;
-    top: 75%;
+    top: 70%;
   }
   .main-headers {
     padding-top: 70px;
     margin-bottom: 50px;
-    font-size: 35px;
+    font-size: 35.5px;
   }
   .avatar {
     height: 130px;
   }
   .about-me {
     margin-top: 50px;
-    font-size: 15px;
+    font-size: 19.5px;
     text-align: center;
     width: 100%;
   }
   .mobile {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
   } 
   .reach-out {
     margin-top: -10px;
     margin-bottom: 70px;
-    font-size: 19px;
+    font-size: 19.5px;
   }
   .details {
     width: 90%;
@@ -413,7 +358,7 @@ footer a:hover {
   }
   .copyright {
     margin-top: 80px;
-    font-size: 12px;
+    font-size: 11.5px;
   }
   .mobile-socials {
     padding: 0;
@@ -423,18 +368,39 @@ footer a:hover {
     padding: 10px;
   }
   .mobile-socials a {
-    text-decoration: none;
     color: #fff;  
     opacity: 50%;
-    font-size: 25px;
+    font-size: 25.5px;
     text-align: center;
   }
 }
 
-
-@media (min-width: 768px) {
-  .mobile-contacts {
-    display: none;
+@media (max-width: 767px) {
+  .nav-link {
+    font-size: 29.5px;
+    margin-bottom: 30px;
+  }
+  .lang {
+    font-size: 15.5px;
+    margin-bottom: 20px;
+  }
+  .lang a {
+    color: #fc00c7;
+  }
+  .main-headers {
+    font-size: 29.5px;
+  }
+  .avatar {
+    height: 170px;
+  }
+  .about-me {
+    margin-top: 70px;
+  }
+  .reach-out {
+    margin-top: -50px;
+  }
+  .copyright {
+    margin-top: 100px;
   }
 }
 
@@ -442,15 +408,5 @@ footer a:hover {
   .giga-text {
     display: none;
   }
+}
 
-}
-@media (max-width: 1179px) {
-  .side-social {
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  .none {
-    display: none;
-  }
-}
